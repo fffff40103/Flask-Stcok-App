@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  href={{ url_for('static', filename='stockinfo.css') }} rel="stylesheet">
+</head>
+<body>
+    <header>
+        {% for data in store_data %}
+        <h1>{{data}}</h1>
+        {% endfor %}
+   
+    </header>
+    <table>
+    <tr>
+        <th>開盤</th>
+        <th style="color:red">最高</th>
+        <th style="color:green">最低</th>
+        <th>收盤</th>
+        <th>總交易量</th>
+        
+    </tr>
+    <tr>
+        {% for price in store_price %}
+        <td>{{price}}</td>
+        {% endfor %}
+    </tr>
+   </table>
+   <div class="news section">
+   <div class="individual news">
+    <h1>個股消息</h1>
+    {% for news in store_indinews %}
+    {% for title,new in news.items() %}
+    <p><a href="{{new}}">{{title}}</a></p>
+    {% endfor %}
+    {% endfor %}
+   </div>
+
+   <div class="daily news">
+    <h1>今日頭條</h1>
+    {% for daily_news in store_dailynews %}
+    {% for title,new in daily_news.items() %}
+    <p><a href="{{new}}">{{title}}</a></p>
+    {% endfor %}
+    {% endfor %}
+   </div>
+   </div>
+    
+    
+    
+</body>
+</html>

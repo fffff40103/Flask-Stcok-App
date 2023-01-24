@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href={{ url_for('static', filename='homepage.css') }} rel="stylesheet">
+    <title>首頁</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Wel stock app</h1>
+    </header>
+    <div>
+    <div class="intro section">
+        <h1>What's following is how we use this app</h1>
+        <ol>
+            <li>add /stock/(stock_number) behind url</li>
+            <li>enter stock_number whatever stock you want</li>
+        </ol>
+    </div>
+    </div>
+
+    <form action="/" method="post">
+        <input type="text" placeholder="股票代號" name="number">
+        <button>提交</button>
+    </form>
+
+    <div class="image">
+        <img src="/static/stock.jpg" alt="stock image">
+    </div>
+
+
+    
+</body>
+</html>

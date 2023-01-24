@@ -1,0 +1,30 @@
+header{
+    display:flex;
+    justify-content: center;
+    h1{
+        margin:10px;
+        
+    }
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    
+    tr,td,th{
+        border:1px solid;
+        border-collapse: collapse;
+        padding:20px;
+    }
+    
+}
+div.news.section{
+    display: flex;
+    justify-content: center;
+    h1{
+        color:red;
+    }
+    
+    
+    
+}

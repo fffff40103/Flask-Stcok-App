@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+header h1 {
+  margin: 10px;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+}
+table tr, table td, table th {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 20px;
+}
+
+div.news.section {
+  display: flex;
+  justify-content: center;
+}
+div.news.section h1 {
+  color: red;
+}
+div.news.section div.daily.news {
+  padding-left: 20px;
+}/*# sourceMappingURL=stockinfo.css.map */
