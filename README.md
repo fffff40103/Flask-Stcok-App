@@ -1,5 +1,6 @@
 # Flask-Stcok-App
 ## 介紹
+[簡易股票程式](https://latest-stock-app.onrender.com/)
 一款由輕量Flask框架的小型專題，簡單輸入股票代號後可以查到股票價格相關資訊，
 以及相關的新聞。
 ## API
